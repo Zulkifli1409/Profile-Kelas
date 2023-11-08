@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    transition: transform 0.3s;
+    /* Animasi ketika hover */
+}
+
+.card h2 {
+    font-size: 1.5em;
+}
+
+.card img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.card .social-buttons {
+    margin-top: 20px;
+}
+
+.card .social-buttons a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    /* Animasi ketika hover */
+}
+
+.card .social-buttons a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.card .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card .button-container a {
+    flex: 1;
+    margin: 0 5px;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.card .button-container a.portfolio {
+    background-color: #333;
+}
+
+.card .button-container a.project {
+    background-color: #333;
+}
+
+.card .button-container a:hover {
+    background-color: #777;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    /* Memperbesar kartu saat dihover */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+}
